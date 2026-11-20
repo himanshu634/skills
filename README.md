@@ -41,3 +41,7 @@ Written for one codebase. Useful as examples; they name files and rules of that 
 | [financial-figures](skills/financial-figures) | Maester | Rules for any number shown to an investor: source, formula, fixture. |
 | [score-posting](skills/score-posting) | Job search | Score one job posting against a resume and profile. |
 | [tailor-resume](skills/tailor-resume) | Job search | Cut a tailored resume for one posting from a maintained base. |
+
+## Licence
+
+[MIT](LICENSE)
