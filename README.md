@@ -29,18 +29,16 @@ npx skills add himanshu634/skills
 
 ## Project-specific
 
-Written for one codebase. Useful as examples; they name files and rules of that project.
-
-| Skill | Project | What it does |
-|---|---|---|
-| [open-pr](skills/open-pr) | Koshi (Expo app) | Checks, commit, push and PR in the project's format. |
-| [release-notes](skills/release-notes) | Koshi | Release announcements from git history, one rendering per audience. |
-| [new-screen](skills/new-screen) | Koshi | Scaffold a screen the way the app's conventions expect. |
-| [new-component](skills/new-component) | Koshi | Scaffold a UI component and its gallery entry. |
-| [add-i18n-key](skills/add-i18n-key) | Koshi | Add a translation key across locales. |
-| [financial-figures](skills/financial-figures) | Maester | Rules for any number shown to an investor: source, formula, fixture. |
-| [score-posting](skills/score-posting) | Job search | Score one job posting against a resume and profile. |
-| [tailor-resume](skills/tailor-resume) | Job search | Cut a tailored resume for one posting from a maintained base. |
+| Skill | What it does |
+|---|---|
+| [open-pr](skills/open-pr) | Checks, commit, push and PR in the project's format. |
+| [release-notes](skills/release-notes) | Release announcements from git history, one rendering per audience. |
+| [new-screen](skills/new-screen) | Scaffold a screen the way the app's conventions expect. |
+| [new-component](skills/new-component) | Scaffold a UI component and its gallery entry. |
+| [add-i18n-key](skills/add-i18n-key) | Add a translation key across locales. |
+| [financial-figures](skills/financial-figures) | Rules for any number shown to an investor: source, formula, fixture. |
+| [score-posting](skills/score-posting) | Score one job posting against a resume and profile. |
+| [tailor-resume](skills/tailor-resume) | Cut a tailored resume for one posting from a maintained base. |
 
 ## Licence
 
