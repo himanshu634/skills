@@ -1,0 +1,12 @@
+{
+ "_note": "Motion's platform limits, kept in one place. Motion's own type instructions are the source of truth: if they differ from these values, update this file.",
+ "max_scenes": 24,
+ "max_total_s": 300,
+ "min_scene_s": 1.0,
+ "fps_allowed": [24, 30, 60],
+ "max_scene_chars": 3500,
+ "target_scene_chars": 2000,
+ "shipped_fonts": ["plus-jakarta-sans", "manrope", "space-grotesk", "instrument-sans", "fraunces", "dm-mono",
+                   "departure-mono", "fraunces-display", "inter-display", "shantell-sans"],
+ "max_flashes_per_s": 3
+}

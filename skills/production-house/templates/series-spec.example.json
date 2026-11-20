@@ -1,0 +1,35 @@
+{
+ "series": "example-series",
+ "title": "Example series",
+ "version": "1.0.0",
+ "look": {"name": "Placeholder", "line": "Plain shapes; replace with the look the art department derives from research"},
+ "stage": {"fps": 24, "aspect": 0},
+ "palettes": {
+  "default": "night",
+  "worlds": {
+   "night": ["#16202A", "#5B7486", "#C9D2D6", "#E0A34E"],
+   "day": ["#E9E2D2", "#7A6A55", "#F6F1E6", "#3F7C85"]
+  }
+ },
+ "fonts": {"display": {"family": "Cormorant Garamond", "or": "fraunces-display"}},
+ "scene_contract": {
+  "require": [
+   {"call": "SERIES.frame(", "why": "registers the picture area (and the matte, if the look has one)"},
+   {"call": "SERIES.finish(", "why": "the surface treatment is part of the look"}
+  ],
+  "require_any": [
+   {"calls": ["SERIES.light."], "why": "every scene is lit by one of the series' recipes"}
+  ],
+  "forbid": [
+   {"pattern": "ease\\.back", "why": "example: this look has no overshoot on characters", "unless": "comic"}
+  ],
+  "budgets": [
+   {"lens_mode": "push", "per_60s": 1, "min": 1, "why": "the push is rationed so it keeps its meaning"}
+  ],
+  "max_words_per_scene": 12,
+  "allow_black_red_white": false
+ },
+ "frames": {
+  "matte": {"aspect": 0, "tol_px": 4}
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "kind": "film",
+ "title": "The Last Train",
+ "episode": "Example only",
+ "about": "Kindness is a risk worth taking.",
+ "voice_model": "silent",
+ "lock": {"series": "example-series", "version": "1.0.0"},
+ "palette_order": ["night"],
+ "user_words": "",
+ "sound": {"motif": "pluck A3 C4 E4 D4, slow", "bed": "pad A1, very quiet", "notes": "Wind bed; no groove."},
+ "scenes": [
+  {
+   "id": "room",
+   "name": "The waiting room",
+   "dur": 6,
+   "desc": "A lamp-lit waiting room; a stranger comes in from the platform and stops.",
+   "screenplay": "S1",
+   "ledger": {"start": "The room belongs to the keeper", "end": "A stranger stands inside it"},
+   "set": "room",
+   "cast": [{"id": "walker", "moves": "walks in 1.0-4.0 s, then holds"}],
+   "light": [{"recipe": "lamp", "opts": {"x": 0.3, "y": 0.5, "flicker": 0.03}}],
+   "lens": {"mode": "still"},
+   "living": ["motes"],
+   "palette": "night",
+   "holds": [{"from": 4.0, "to": 6.0, "who": "walker"}],
+   "beats": [{"t": 0, "what": "Room already lit; readable first frame"}, {"t": 1.0, "what": "Stranger enters"}, {"t": 4.0, "what": "Stranger stops"}],
+   "text": ["The Last Train"],
+   "sound": {"cues": [{"t": 0, "fx": "pad bed in"}, {"t": 4.0, "fx": "motif, single notes"}]},
+   "vo": []
+  },
+  {
+   "id": "platform",
+   "name": "The platform",
+   "dur": 8,
+   "desc": "Morning on the empty platform; the stranger is gone, the bench still warm.",
+   "screenplay": "S2",
+   "ledger": {"start": "The keeper alone with the question", "end": "The keeper chose; the stranger moved on"},
+   "set": {"local": "an empty platform with one bench"},
+   "cast": [],
+   "light": [{"recipe": "daylight", "opts": {"angle": 120}}],
+   "lens": {"mode": "push", "opts": {"from": 2, "to": 7.5, "z1": 1.1}},
+   "living": ["motes"],
+   "palette": "night",
+   "holds": [{"from": 6.0, "to": 8.0, "who": "the bench"}],
+   "beats": [{"t": 0, "what": "Empty platform"}, {"t": 2.0, "what": "Slow push on the bench"}],
+   "text": [],
+   "sound": {"silence": [{"from": 0.0, "to": 0.8}], "cues": [{"t": 0.8, "fx": "motif resolves"}]},
+   "vo": []
+  }
+ ]
+}
